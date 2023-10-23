@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Evento</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8"/>
+    <script type="text/javascript" src="jquery-1.3.2.js"></script>
+  
+    <link rel="stylesheet" href="css/tipo_evento.css">
+</head>
+<body>
+    <div class="header"></div>
+        <div class="scroll"></div>
+        <ul id="navigation">
+            <li class="home"><a href="" title="Principal"></a></li>
+            <li class="photos"><a href="http://localhost:8081/adventure-master/listar_cliente.php" title="Mis Clientes"></a></li>
+            <li class="about"><a href="http://localhost:8081/adventure-master/reservacion.php" title="Nueva Reservacion"></a></li>
+            <li class="search"><a href="http://localhost:8081/adventure-master/listar_reservaciones.php" title="Lista de Reservaciones"></a></li>
+            <li class="rssfeed"><a href="tipo_evento.html" title="Mis Eventos"></a></li>
+            <li class="podcasts"><a href="tipo_pago.html" title="Mis Metodos de Cobro"></a></li>
+
+        </ul>
+    <div><img src="img/6197706_orig.jpg" alt="image" class="img-grande">
+        <div class="container">
+            <h1 class="letras">Eventos</h1>
+            <form id="eventoForm" action="http://localhost:8081/adventure-master/registrar_evento.php" method="post">
+                <div class="form-group">
+                    <label for="tipo">Tipo de Evento:</label>
+                    <select id="nombre" name="nombre" required="">
+                        <option value="Boda">Boda</option>
+                        <option value="Cumpleaños">Cumpleaños</option>
+                        <option value="Corporativo">Evento Corporativo</option>
+                        <option value="Fiesta Navideña">Fiesta Navideña</option>
+                        <option value="Día del Niño">Día del Niño</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="costo">Costo del Evento:</label>
+                    <input type="number" id="costo" name="costo" required title="Rellene este campo">
+                </div>
+
+                <button type="submit" class="center-button">Guardar</button>
+            </form>
+        </div>
+    
+        <script type="text/javascript">
+            $(function() {
+                $('#navigation a').stop().animate({'marginTop':'-50px'}, 1000); // Cambiamos 'marginLeft' a 'marginTop'
+        
+                $('#navigation > li').hover(
+                    function () {
+                        $('a', $(this)).stop().animate({'marginTop':'10px'}, 200); // Cambiamos 'marginLeft' a 'marginTop' y ajustamos el valor
+                    },
+                    function () {
+                        $('a', $(this)).stop().animate({'marginTop':'-50px'}, 200); // Cambiamos 'marginLeft' a 'marginTop' y ajustamos el valor
+                    }
+                );
+            });
+        </script>
+    
+
+
+</body>
+</html>

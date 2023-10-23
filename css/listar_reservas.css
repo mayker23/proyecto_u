@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body {
+    background: url("../img/matrimonio03-940x400_11_132649.jpeg") no-repeat;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #b6b3b37a;
+    padding: 20px;
+    margin-top: 1%;
+    border-radius: 10px;
+    overflow-y: auto;
+    max-height: 88vh; /* Altura máxima del contenedor */
+    box-shadow: 6px 6px 6px rgba(20, 20, 20, 0.2);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Pacifico', sans-serif;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-table th, .user-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1.5px solid #000000e2;
+}
+
+.user-table th {
+    background-color: #ffffff;
+}
+
+.user-table td {
+    background-color: #ffffff;
+}
+
+.add-button {
+    background-color: #0b0b0b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 0px;
+    position: relative;
+    right: -88%;
+
+}
+
+.add-button:hover {
+    background-color: #030303ab;
+}
+
+.button {
+    background-color: #0b0b0b;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #030303ab;
+}
+

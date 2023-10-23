@@ -1,0 +1,59 @@
+ul#navigation {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 10px;
+    left: 25;
+    list-style: none;
+    z-index: 9999;
+    display: flex; /* Cambiamos la propiedad para que sea un flex container */
+}
+
+ul#navigation li {
+    width: 100px;
+}
+
+ul#navigation li a {
+    display: block;
+    width: 100px;
+    height: 70px;
+    background-color: #0f0808;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid #ffffff;
+    border-radius: 10px; /* Simplificamos la propiedad para bordes redondeados */
+    -moz-box-shadow: 0px 4px 3px #000;
+    -webkit-box-shadow: 0px 4px 3px #000;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+/* Agrega margen entre elementos del menú */
+ul#navigation li {
+    margin-right: 25px;
+}
+
+/* Estilo para cada elemento del menú */
+ul#navigation .home a {
+    background-image: url(../img/calendar_10823.png);
+}
+
+ul#navigation .about a {
+    background-image: url(../img/calendar_10823.png);
+}
+
+ul#navigation .search a {
+    background-image: url(../img/calendar_10823.png);
+}
+
+ul#navigation .podcasts a {
+    background-image: url(../img/calendar_10823.png);
+}
+
+ul#navigation .rssfeed a {
+    background-image: url(../img/calendar_10823.png);
+}
+
+ul#navigation .photos a {
+    background-image: url(../img/calendar_10823.png);
+}
